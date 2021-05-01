@@ -8,11 +8,15 @@
     <title>Login Page</title>
 
 </head>
-<div>
+<div class="parent">
   <label for="mail">Enter Your E-mail</label>
   <input type="text" id="mail" placeholder="E-mail">
   <label for="password">Enter Your E-mail</label>
   <input type="password" id="password" placeholder="Password" />
+  <div class="inline">
+<input type="checkbox" class="hidepw" id="hidepw" onclick="hidepw()">
+<label for="hidepw" id="hidepwtxt">Show Password</label>
+  </div>
   <button onclick="redirect()">Login</button>
 </div>
     <script src="index.js"></script>
